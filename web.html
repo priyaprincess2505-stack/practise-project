@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Shree 🤍</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#dbeafe,#ffffff,#fce7f3);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.card{
+    width:90%;
+    max-width:750px;
+    background:rgba(255,255,255,.35);
+    backdrop-filter:blur(20px);
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 10px 40px rgba(0,0,0,.15);
+}
+
+h1{
+    text-align:center;
+    color:#333;
+    margin-bottom:5px;
+}
+
+h3{
+    text-align:center;
+    color:#777;
+    margin-bottom:25px;
+    font-weight:400;
+}
+
+.message{
+    font-size:18px;
+    line-height:1.9;
+    color:#444;
+}
+
+button{
+    margin:30px auto 0;
+    display:block;
+    padding:14px 30px;
+    border:none;
+    border-radius:50px;
+    background:#4f46e5;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.footer{
+    margin-top:35px;
+    text-align:center;
+    color:#888;
+    font-style:italic;
+}
+
+#tamil{
+    display:none;
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<h1>☁️ A Little Note</h1>
+<h3>From Bhava 🤍 To Shree</h3>
+
+<div id="english" class="message">
+
+<p>
+No matter how many friends I have, you'll always be the most special one in my life.
+I may lose anyone, but I never want to lose your friendship.
+No one can ever replace your place in my heart.
+Maybe one day you can replace me, but my love and care for you will never be fake.
+</p>
+
+<br>
+
+<p>
+I learned how beautiful true friendship is because of you.
+In you, I found loyalty, comfort, and a father's kind of care.
+At the same time, I also realized that the pain of losing a friendship can hurt even more than a heartbreak.
+</p>
+
+<br>
+
+<p>
+Every day you don't talk to me feels so heavy and empty.
+But whenever you do, my happiness has no limits.
+</p>
+
+<br>
+
+<p>
+You'll always be special to me, Shree. 🤍
+</p>
+
+</div>
+
+<div id="tamil" class="message">
+
+<p>
+எனக்கு எவ்வளவு நண்பர்கள் இருந்தாலும், நீ தான் எப்போதும் ஸ்பெஷல்.
+என் வாழ்க்கையில் யார் வேண்டுமானாலும் விலகிப் போகலாம்,
+ஆனால் உன்னுடைய நட்பை மட்டும் நான் இழக்க விரும்பவில்லை.
+</p>
+
+<br>
+
+<p>
+உன்னுடைய இடத்தை யாராலும் நிரப்ப முடியாது.
+உன் மீது நான் வைத்திருக்கும் அன்பும் அக்கறையும் எப்போதும் பொய்யாக இருக்காது.
+</p>
+
+<br>
+
+<p>
+நட்பு எவ்வளவு அழகானது என்று உன்னிடம்தான் நான் கற்றுக்கொண்டேன்.
+உன்னிடம் நான் உண்மையான நம்பிக்கை, ஆறுதல்,
+ஒரு அப்பாவின் அக்கறை போன்ற பாசம் எல்லாவற்றையும் உணர்ந்தேன்.
+</p>
+
+<br>
+
+<p>
+அதே நேரத்தில்,
+காதல் தோல்வியைவிட ஒரு உண்மையான நட்பை இழப்பதன் வலி அதிகம் என்பதையும்
+உன்னால்தான் புரிந்துகொண்டேன்.
+</p>
+
+<br>
+
+<p>
+நீ பேசாமல் இருக்கும் ஒவ்வொரு நாளும் எனக்கு மிகவும் கஷ்டமாக இருக்கிறது.
+ஆனால் நீ பேசும் ஒவ்வொரு முறையும்,
+என் சந்தோஷத்திற்கு அளவே இருக்காது.
+</p>
+
+<br>
+
+<p>
+எனக்கு எப்போதும் நீ தான் ஸ்பெஷல், ஷ்ரீ. 🤍
+</p>
+
+</div>
+
+<button onclick="translateMessage()" id="btn">
+🌸 Translate to Tamil
+</button>
+
+<div class="footer">
+With Love,<br>
+Bhava 🤍
+</div>
+
+</div>
+
+<script>
+
+let english=true;
+
+function translateMessage(){
+
+if(english){
+
+document.getElementById("english").style.display="none";
+document.getElementById("tamil").style.display="block";
+document.getElementById("btn").innerHTML="🌍 View in English";
+
+}else{
+
+document.getElementById("english").style.display="block";
+document.getElementById("tamil").style.display="none";
+document.getElementById("btn").innerHTML="🌸 Translate to Tamil";
+
+}
+
+english=!english;
+
+}
+
+</script>
+
+</body>
+</html>
